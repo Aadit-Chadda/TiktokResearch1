@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "axios": "^1.7.7",
     "puppeteer": "^23.4.1",
-    "puppeteer-core": "^23.4.1"
+    "puppeteer-core": "^23.4.1",
+    "xml2js": "^0.6.2"
   },
   "name": "tiktokresearch1",
   "version": "1.0.0",
