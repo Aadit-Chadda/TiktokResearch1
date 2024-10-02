@@ -21,6 +21,11 @@ async function run () {
             text: element.textContent
         })))
     
+    const divisions = await page.$$eval("._yb_x412sj", (element) => 
+        element.map((element) => ({
+            text: element.textContent
+        })))
+    
     const images = await page.$$eval("img", (element) =>
         element.map((element) => ({
             src: element.src,
@@ -39,7 +44,8 @@ async function run () {
         images,
         links,
         imagesCount,
-        linksCount
+        linksCount,
+        divisions
     };
 
     // Convert JSON into a string
